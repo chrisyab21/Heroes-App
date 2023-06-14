@@ -15,7 +15,7 @@ type props = {
 
 export const HeroCard = (heroe:props) => {
 
-    const heroeImageUrl = `/src/assets/heroes/${heroe.id}.jpg`;
+    const heroeImageUrl = `/assets/heroes/${heroe.id}.jpg`;
 
   return (
     <div className="col animate__animated animate__fadeIn">
