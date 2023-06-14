@@ -8,11 +8,14 @@ import { DcPage } from './heroes/pages/DcPage';
 import { LoginPage } from './auth/pages/LoginPage';
 import { SearchPage } from './heroes/pages/SearchPage';
 import { HeroPage } from './heroes/pages/HeroPage';
+import { AuthProvider } from './auth/context/AuthProvider';
+import { PrivateRoute } from './heroes/routes/PrivateRoute';
+import { PublicRoute } from './heroes/routes/PublicRoute';
 
 const rutas:RouteObject[] = [
   {
     path: '/',
-    element: <HeroesApp/>,
+    element: <PrivateRoute><HeroesApp/></PrivateRoute>,
     children: [
       {
         path: '/marvel',
@@ -52,7 +55,7 @@ const rutas:RouteObject[] = [
 
   {
     path: '/login',
-    element: <LoginPage/>,
+    element: <PublicRoute><LoginPage/></PublicRoute>
 
   },
 
@@ -65,8 +68,8 @@ const router = createBrowserRouter(rutas);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-
+    <AuthProvider>
     <RouterProvider router={router}/>
-   
+    </AuthProvider>
   </React.StrictMode>,
 )

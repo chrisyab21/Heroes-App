@@ -5,7 +5,6 @@ import {FC, useMemo} from 'react';
 
 export const HeroPage:FC = () => {
 
-
   const params = useParams();
 
   const {id} = params;
@@ -30,7 +29,6 @@ export const HeroPage:FC = () => {
 }
 
 
-  console.log(hero);
 
     if( !hero){
       return <Navigate to={'/marvel'}/>;
