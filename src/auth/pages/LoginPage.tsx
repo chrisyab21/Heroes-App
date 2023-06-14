@@ -7,7 +7,7 @@ export const LoginPage = () => {
 
   const navigate = useNavigate();
 
-  const {authState, login} = useContext(AuthContext);
+  const {login} = useContext(AuthContext);
   
   const onLogin = () =>{
 

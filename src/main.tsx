@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
 import { HeroesApp } from './HeroesApp';
-import { createBrowserRouter, RouteObject, RouterProvider, Navigate } from 'react-router-dom';
+import { createBrowserRouter, RouteObject, RouterProvider } from 'react-router-dom';
 import { MarvelPage } from './heroes/pages/MarvelPage';
 import { DcPage } from './heroes/pages/DcPage';
 import { LoginPage } from './auth/pages/LoginPage';
