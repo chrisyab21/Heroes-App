@@ -38,7 +38,7 @@ export const SearchPage = () => {
   
   }
   
-  const { formState, OnResetForm, onInputChange} = useForm<CustomForm>(formulario);
+  const { formState, onInputChange} = useForm<CustomForm>(formulario);
 
   const onSearchSubmit = (event: FormEvent) =>{
 
