@@ -1,0 +1,15 @@
+
+
+.loginPageContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 100vh;
+    background-color: rgba(32, 7, 7, 0.856);
+    background-image:  url("../../assets/CapitanAmerica.jpg");
+    background-size: cover;
+    background-position: center;
+
+}

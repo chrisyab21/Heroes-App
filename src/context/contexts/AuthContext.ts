@@ -1,7 +1,8 @@
 
 import { createContext } from "react";
+import { User } from "../providers/AuthProvider";
 
-type ContextType = {
+export type ContextType = {
 
     authState: {
         logged: boolean,
@@ -11,7 +12,7 @@ type ContextType = {
         }
     },
 
-    login: (parametro: string) => void,
+    login: (parametro: User) => void,
     logout: () => void,
 }
 

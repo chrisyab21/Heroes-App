@@ -1,12 +1,12 @@
 
 
-import {heroes} from '../data/Heroes';
+import {localHeroes} from '../data/Heroes';
 
 
 
 
 
-export const getHeroesByPublisher = (publisher:string) => {
+export const getLocalHeroesByPublisher = (publisher:string) => {
 
     const validPublishers:string[] = ['DC Comics', 'Marvel Comics'];
 
@@ -15,7 +15,7 @@ export const getHeroesByPublisher = (publisher:string) => {
         throw new Error(`${publisher} no es un una editorial valida`);
     }else{
         
-        return heroes.filter((heroe)=> heroe.publisher === publisher );
+        return localHeroes.filter((heroe)=> heroe.publisher === publisher );
 
     }
 

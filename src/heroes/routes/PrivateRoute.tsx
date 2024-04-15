@@ -1,7 +1,8 @@
 
 import {FC, ReactElement, useContext, useEffect} from 'react'
-import { AuthContext } from '../../auth/context/AuthContext';
+import { AuthContext } from '../../context/contexts/AuthContext';
 import { Navigate, useLocation} from 'react-router-dom';
+
 
 type props = {
 
@@ -11,6 +12,9 @@ type props = {
 export const PrivateRoute:FC<props> = ({children}) => {
 
   const {pathname, search} = useLocation();
+
+  const {authState} = useContext(AuthContext);
+  
   
     useEffect(() => {
 
@@ -20,10 +24,6 @@ export const PrivateRoute:FC<props> = ({children}) => {
 
     }, [pathname, search])
  
- 
-
-  const {authState} = useContext(AuthContext);
-
  
 
   return authState.logged ? children : <Navigate to={'/login'}></Navigate>;

@@ -1,4 +1,4 @@
-import { heroes } from "../data/Heroes"
+import { localHeroes } from "../data/Heroes"
 
 
 
@@ -8,6 +8,6 @@ import { heroes } from "../data/Heroes"
 export const getHeroeById = (id?:string) => {
  
 
-    return  heroes.find((heroe) => heroe.id === id );
+    return  localHeroes.find((heroe) => heroe.id === id );
 
 }

@@ -1,0 +1,143 @@
+.container {
+
+    background-color: transparent;
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    border: 1px solid red;
+    position: relative;
+    bottom: 30px;
+}
+
+.loginForm {
+
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+    padding: 2%;
+    align-items: center;
+    color: white;
+    gap: 3%;
+    
+}
+
+
+.tittle {
+
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(209, 205, 205);
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputsContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 35%;
+    margin-top: -10%;
+    gap: 2%;
+   
+}
+
+.buttonsContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 20%;
+    gap: 10%;
+    margin-top: -3%;
+
+}
+
+
+span {
+
+    width: fit-content;
+    font-size: small;
+
+}
+
+.loginButton {
+
+    width: inherit;
+
+}
+
+.inputsContainer>input {
+
+    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid red;
+    background-color: inherit;
+    outline: unset;
+    min-height: 40px;
+    width: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inputsContainer>input:nth-child(1) {
+    
+    margin-top: 5%;
+}
+
+
+.inputsContainer>input:focus {
+
+    border: 1px solid rgb(5, 108, 241);
+    border-radius: 6px;
+    outline: unset;
+}
+
+
+hr {
+
+    width: inherit;
+    border-top: 1px solid rgba(255, 255, 255, 0.596);
+    height: 10px;
+    margin-top: 10px;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+
+a {
+
+    font-size: small;
+    cursor: pointer;
+}
+
+
+.linksContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 10%;
+
+
+}
+
+.googleContainer {
+
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    
+}
+
+.googleContainer > img {
+
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-position: center;
+
+}

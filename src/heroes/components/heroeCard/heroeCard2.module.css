@@ -1,0 +1,71 @@
+
+
+.cardRow {
+
+    background-color: green;
+    display: flex;
+    
+}
+
+.imgContainer{
+    background-color: red;
+}
+
+
+.bodyContainer{
+
+    display: flex ;
+    flex-direction: column;
+    background-color: red;
+}
+
+.cardData{
+    display: flex;
+    flex-direction: column;
+    background-color: royalblue;
+    
+
+}
+
+
+.cardData > .cardText:nth-child(2){ /* El elemento cardText que es el segundo hijo directo del contenedor cardData */
+
+    background-color: aqua;
+
+}
+
+.cardData > .cardText:nth-child(3){ /* El elemento cardText que es el segundo hijo directo del contenedor cardData */
+
+    background-color: yellow;
+
+}
+
+.cardData > .cardText:nth-child(4){ /* El elemento cardText que es el segundo hijo directo del contenedor cardData */
+
+    background-color: fuchsia;
+
+}
+
+p{
+    margin-bottom: 5px;
+    /* background-color: aqua; */
+}
+
+.buttonsContainer{
+
+    display: flex;  
+    justify-content: end;
+    gap: 0.7rem;
+    margin-top: auto;
+    
+}
+
+
+.deleteBtn, .editBtn {
+
+    width: 40px;
+}
+
+
+
+

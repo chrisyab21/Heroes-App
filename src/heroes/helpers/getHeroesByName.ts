@@ -1,5 +1,4 @@
-import { heroes } from "../data/Heroes";
-
+import { localHeroes } from "../data/Heroes";
 
 
 
@@ -10,7 +9,7 @@ export const getHeroesByName = (name:string = '') => {
     if(name.length === 0) return  [];
 
 
-    return heroes.filter(
+    return localHeroes.filter(
         (hero) => hero.superhero.toLowerCase().includes(name)
         );
 

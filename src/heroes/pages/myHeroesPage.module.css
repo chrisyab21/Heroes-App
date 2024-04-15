@@ -1,0 +1,71 @@
+
+
+.cardContainer {
+
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttonsContainer{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.addButton {
+
+
+}
+
+.deleteBtn{
+  margin-left: 15px;
+
+
+}
+
+
+
+
+/* Button.module.css */
+.btnResponsive {
+    /* Ajusta estos valores según tus necesidades */
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem; /* Tamaño de fuente base */
+    font-family: 'Roboto', sans-serif;
+   
+  }
+  
+  @media (max-width: 575.98px) {
+    .btnResponsive {
+      font-size: 0.85rem; /* Más pequeño en dispositivos móviles */
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .btnResponsive {
+      font-size: 0.875rem; /* Intermedio en tablets pequeñas */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .btnResponsive {
+      font-size: 1rem; /* Default para tablets y laptops pequeñas */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .btnResponsive {
+      font-size: 1.15rem; /* Más grande en pantallas grandes */
+    }
+  }
+  
